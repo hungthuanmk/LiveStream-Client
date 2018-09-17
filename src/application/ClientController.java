@@ -61,7 +61,7 @@ public class ClientController {
 	    BufferedReader is = null;
 			
 		 try {
-			 socket = new Socket("localhost", 1998);
+			 socket = new Socket("10.12.0.50", 1998);
 			 
 	         os = socket.getOutputStream();
 //	         is = new BufferedReader(new InputStreamReader(socket.getInputStream()));
@@ -104,7 +104,7 @@ public class ClientController {
 						imgViewer.setImage(mat2Image(frame));
 					});
 					try {
-						TimeUnit.MILLISECONDS.sleep(30);
+						TimeUnit.MILLISECONDS.sleep(16);
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					}
